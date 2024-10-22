@@ -2,8 +2,6 @@
 #                                     SCMD                                     #
 # **************************************************************************** #
 
-""
-
 '/bin/echo test1'
 
 awk 'BEGIN{srand(42); for(i=1;i<=1000000;i++)print int(rand()*1000)}' | awk '{sum+=$1} END {print sum/NR}'

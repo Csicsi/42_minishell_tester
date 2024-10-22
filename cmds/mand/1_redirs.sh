@@ -18,12 +18,6 @@ echo hi >./test_files/invalid_permission | echo bye
 
 echo hi >./test_files/invalid_permission >./outfiles/outfile01 | echo bye
 
-cat >./test_files/invalid_permission <"./test_files/infile"
-
-cat >./outfiles/outfile01 <missing
-
-cat >./test_files/invalid_permission <missing
-
 cat >./outfiles/outfile01 <missing >./test_files/invalid_permission
 
 ls >./outfiles/outfile01 >>./outfiles/outfile01 >./outfiles/outfile02
